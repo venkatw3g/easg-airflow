@@ -12,6 +12,8 @@ jobs:
           aws-secret-access-key: yBytlIea4KJVr0F4ebS1qiTxNK+SbNpIgy6QMOyS
           aws-region: us-east-1
       - name: upload to S3
-        run: aws s3 cp./'easg-airflow' s3://githubactionesagbucket
+        #run: aws s3 cp./'easg-airflow' s3://githubactionesagbucket
+        run: aws s3 cp 'myinstanceppk.ppk' s3://githubactionesagbucket/
+
         
       
