@@ -21,6 +21,11 @@ jobs:
          aws s3 cp "myinstanceppk.ppk" s3://githubactionesagbucket1/
          aws s3 cp "sandc working script.txt" s3://githubactionesagbucket1/
 
+      - name: Upload folder to S3
+        run: |
+         aws s3 cp "./easg-airflow" "s3://githubactionesagbucket1/easg-airflow" --recursive
+
+
 
         
       
