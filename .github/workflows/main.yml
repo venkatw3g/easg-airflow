@@ -13,7 +13,9 @@ jobs:
           aws-region: us-east-1
       - name: upload to S3
         #run: aws s3 cp./'easg-airflow' s3://githubactionesagbucket
-        run: aws s3 cp 'myinstanceppk.ppk' s3://githubactionesagbucket1/
+        #run: aws s3 cp 'myinstanceppk.ppk' s3://githubactionesagbucket1/
+        run: aws s3 cp ./esag_airflow s3://githubactionesagbucket1/esag_airflow --recursive
+
 
         
       
